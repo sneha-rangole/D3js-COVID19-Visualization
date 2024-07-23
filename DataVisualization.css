@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.chart-title{
+  padding-left: 10px;
+}
+
+.filter-label{
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.filter-option{
+  font-size: 20px;
+}
+
+#map-visualization {
+  border: 1px black solid;
+  flex: 0 0 50%; 
+}
+
+#bar-visualization {
+  border: 1px black solid;
+  flex: 0 0 40%;
+}
+
+.tooltip {
+  width: auto;
+  height: 20px;
+  position: absolute;
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border-radius: 8px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tooltip.show {
+  opacity: 1;
+}

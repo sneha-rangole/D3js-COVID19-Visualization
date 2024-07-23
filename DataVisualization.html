@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Data Visualization</title>
+    <link rel="stylesheet" href="DataVisualization.css">
+</head>
+<body>
+    <div id="controls">
+        <label for="filter" class="filter-label">Filter:</label>
+        <select id="filter" class="filter-option">
+            <option value="Active">Active Cases</option>
+            <option value="Confirmed">Confirmed Cases</option>
+            <option value="Deaths">Deaths</option>
+            <option value="Recovered">Recovered Cases</option>
+        </select>
+    </div>
+    <div class="container">
+        <div id="map-visualization" class="map-container">
+            <h2 class="chart-title">COVID-19 Cases Worldwide</h2>
+        </div>
+        <div id="bar-visualization" class="bar-chart-container">
+            <h2 class="chart-title">COVID-19 Cases by WHO Region</h2>
+        </div>
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="DataVisualization.js"></script>
+</body>
+</html>
